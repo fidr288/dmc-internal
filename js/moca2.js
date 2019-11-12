@@ -1,6 +1,15 @@
 let b1 = document.getElementById("b1");
 let b2 = document.getElementById("b2");
 
+b1.addEventListener("click", function(){
+    document.getElementById("content").innerHTML = '<div class="container"><div id="container"><canvas id="imageView" width="600" height="345" style="background-image: url(./files/numbers.png)";></canvas></div></div><div class="container"><p>Please draw a line alternating between a square with a number and a square with dots in increasing order.Begin here [point to the square with the number 1] and draw a line from the square with the number 1 to the square with one dot [point to the square with one dot]. Then draw a line to the square with the number 2 [point to the square with number 2]then to the square with two dots [point to the square with two dots]and so on. End here [point to the square with six dots].</p><p>检查者向受试者说明“请您按照从数字到点并逐渐升高的顺序画一条连线。从这里开始[指向数字（1）]，从数字1连向一个点[指向含有一个点的正方形]，再连向数字2[指向数字（2）]，之后连向两个点[指向含有两个点的正方形]，并一直连下去，到这里结束[指向含有一个点的正方形]”。</p></div>'
+  });
+  
+  b2.addEventListener("click", function(){
+    document.getElementById("content").innerHTML = '<p>yeah</p>'
+  });
+  
+
     // Variables for referencing the canvas and 2dcanvas context
     var canvas,ctx;
 

@@ -1,0 +1,103 @@
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/gad.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet"> 
+
+    <title>General anxiety score</title>
+  </head>
+  <body>
+      <nav class="navbar fixed-top navbar-light bg-light">
+          <a class="navbar-brand" href="./index.html">Home</a>
+      </nav>
+      <div class="container">
+          <h3 style="padding-top: 60px">GAD-7 Generaly anxiety score</h3>
+          <hr>
+          <h4>Over the last 2 weeks, how often have you been bothered by the following problems?<br>
+            过去两周内，患者是否遇到如下7个焦虑相关问题。</h4>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Not at all<br>绝对没有</th>
+            <th scope="col">Several days<br>几天</th>
+            <th scope="col">Over half the days<br>超过一半</th>
+            <th scope="col">Nearly everyday<br>几乎每天</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Feeling nervous, anxious, or on edge?<br>紧张、焦虑或愤怒</th>
+            <td><input name="one" value = "0" type="radio" required></td>
+            <td><input name="one" value = "1" type="radio" required></td>
+            <td><input name="one" value = "2" type="radio" required></td>
+            <td><input name="one" value = "3" type="radio" required></td>
+          </tr>
+          <tr>
+            <th scope="row">Becoming easily annoyed or irritable?
+              <br>易被激怒?</th>
+            <td><input name="two" value = "0" type="radio" required></td>
+            <td><input name="two" value = "1" type="radio" required></td>
+            <td><input name="two" value = "2" type="radio" required></td>
+            <td><input name="two" value = "3" type="radio" required></td>
+          </tr>
+          <tr>
+            <th scope="row">Feeling afraid as if something awful might happen?
+              <br>害怕什么可怕的事情发生?）</th>
+            <td><input name="three" value = "0" type="radio" required></td>
+            <td><input name="three" value = "1" type="radio" required></td>
+            <td><input name="three" value = "2" type="radio" required></td>
+            <td><input name="three" value = "3" type="radio" required></td>
+          </tr>
+          <tr>
+            <th scope="row">Worrying too much about different things?
+              <br>担心很多事情?</th>
+            <td><input name="four" value = "0" type="radio" required></td>
+            <td><input name="four" value = "1" type="radio" required></td>
+            <td><input name="four" value = "2" type="radio" required></td>
+            <td><input name="four" value = "3" type="radio" required></td>
+          </tr>
+          <tr>
+            <th scope="row">Being so restless that it's hard to sit still?
+              <br>如此不安以至于很难坐立不安?</th>
+            <td><input name="five" value = "0" type="radio" required></td>
+            <td><input name="five" value = "1" type="radio" required></td>
+            <td><input name="five" value = "2" type="radio" required></td>
+            <td><input name="five" value = "3" type="radio" required></td>
+          </tr>
+          <tr>
+            <th scope="row">Not being able to stop or control worrying?
+              <br>不能停止或不能控制的担心?</th>
+            <td><input name="six" value = "0" type="radio" required></td>
+            <td><input name="six" value = "1" type="radio" required></td>
+            <td><input name="six" value = "2" type="radio" required></td>
+            <td><input name="six" value = "3" type="radio" required></td>
+          </tr>
+          <tr>
+            <th scope="row">Trouble relaxing?
+              <br>很难放松?</th>
+            <td><input name="seven" value = "0" type="radio" required></td>
+            <td><input name="seven" value = "1" type="radio" required></td>
+            <td><input name="seven" value = "2" type="radio" required></td>
+            <td><input name="seven" value = "3" type="radio" required></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="buttons">
+        <button id="calc" type="button" class="btn btn-success" >Calculate</button>
+        <button id="clear" type="button" class="btn btn-danger">Clear</button>   
+        </div> 
+    </div>
+    <hr>
+    <div class="container message">
+        <p id="message"></p>
+        <p id="level"></p>
+    </div>
+  </body>
+  <script src="js/gad.js"></script>
+</html>

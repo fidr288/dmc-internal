@@ -1,0 +1,62 @@
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/crcl.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet"> 
+
+    <title>Creatinine clearance</title>
+  </head>
+  <body>
+      <nav class="navbar fixed-top navbar-light bg-light">
+          <a class="navbar-brand" href="./index.html">Home</a>
+      </nav>
+    <div class="container">
+      <h2 style="padding-top: 60px">Creatinine clearance calculator</h2>
+      <div id="gender">
+      <label for="male">Male</label>
+      <input name="gender" value = "male" id="male" type="radio" required>
+      <label for="female">Female</label>
+      <input name="gender" value = "female" id="female" type="radio" required>
+      </div>
+ 
+      <div class="block">
+      <label for="age">Age:</label>
+      <input type="number" id="age" placeholder="years" required>
+      </div>
+
+      <div class="block">
+      <label for="mass">Weight in kg:</label>
+      <input type="number" id="mass" placeholder="kg" required>
+      </div>
+
+      <div class="block">
+      <label for="cr">Serum Creatinine:</label>
+      <input type="number" id="cr" placeholder="μmol/l" required>
+      </div>
+
+      <div class="buttons">
+      <button id="calc" type="button" class="btn btn-success" >Calculate</button>
+      <button id="clear" type="button" class="btn btn-danger">Clear</button>   
+      </div>    
+    </div>
+    <div class="container message">
+    <h3 id="message"></h3 >
+    <p id="allopurinol"></p>
+    <p id="colchicine"></p>
+    <p id="metformin"></p>
+    <p id="vildagliptin"></p>
+    <p id="bezafibrate"></p>
+    <p id="cotrimoxazol"></p>
+    <p id="dabigatran"></p>
+    <p id="simvastatin"></p>
+    <p id="venlafaxine"></p>
+  </div>
+
+  </body>
+  <script src="js/crcl.js"></script>
+</html>

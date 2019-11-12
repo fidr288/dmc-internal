@@ -1,0 +1,132 @@
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/cat.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet"> 
+
+    <title>CAT score</title>
+  </head>
+  <body>
+      <nav class="navbar fixed-top navbar-light bg-light">
+          <a class="navbar-brand" href="./index.html">Home</a>
+      </nav>
+      <div class="container">
+        <h3 style="padding-top: 60px">CAT COPD score</h3>
+        <hr>
+        <h4>This questionnaire will help you and your healthcare professional to measure the impact that COPD (Chronic Obstructive Pulmonary Disease) is having on your wellbeing and daily life.Your answers and test score can be used by you and your healthcare professional to help improve the management of your COPD and gain the greatest benefit from the treatment.<br>
+            此问卷将协助您以及您的专业医疗照护人员，评量慢性双重性肺病（COPD，慢性阻塞性肺疾病）对于您的健康与日常生活的影响。 医疗照护人员处理您的慢性双重性肺病，从治疗中获得最大的利益。</h4>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">0</th>
+            <th scope="col">1</th>
+            <th scope="col">2</th>
+            <th scope="col">3</th>
+            <th scope="col">4</th>
+            <th scope="col">5</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">I never cough<br>我从不咳嗽</th>
+            <td><input name="one" value = "0" type="radio" required></td>
+            <td><input name="one" value = "1" type="radio" required></td>
+            <td><input name="one" value = "2" type="radio" required></td>
+            <td><input name="one" value = "3" type="radio" required></td>
+            <td><input name="one" value = "4" type="radio" required></td>
+            <td><input name="one" value = "5" type="radio" required></td>
+            <th scope="row"> I cough all the time<br>我一直在咳嗽</th>
+          </tr>
+          <tr>
+            <th scope="row">I have no phlegm (mucous) on my chest at all<br>我胸腔里一点痰也没有</th>
+            <td><input name="two" value = "0" type="radio" required></td>
+            <td><input name="two" value = "1" type="radio" required></td>
+            <td><input name="two" value = "2" type="radio" required></td>
+            <td><input name="two" value = "3" type="radio" required></td>
+            <td><input name="two" value = "4" type="radio" required></td>
+            <td><input name="two" value = "5" type="radio" required></td>
+            <th scope="row">My chest is full of phlegm (mucus)<br>我胸腔里有很多很多痰</th>
+          </tr>
+          <tr>
+            <th scope="row">My chest does not feel tight at all<br>我一点也没有胸闷的感觉</th>
+            <td><input name="three" value = "0" type="radio" required></td>
+            <td><input name="three" value = "1" type="radio" required></td>
+            <td><input name="three" value = "2" type="radio" required></td>
+            <td><input name="three" value = "3" type="radio" required></td>
+            <td><input name="three" value = "4" type="radio" required></td>
+            <td><input name="three" value = "5" type="radio" required></td>
+            <th scope="row">My chest feels very tight<br>我胸闷的感觉很严重</th>
+          </tr>
+          <tr>
+            <th scope="row">When I walk up a hill or a flight of stairs I am not out of breath<br>当我在爬坡或爬一层楼梯时，我并不感觉喘不过气来</th>
+            <td><input name="four" value = "0" type="radio" required></td>
+            <td><input name="four" value = "1" type="radio" required></td>
+            <td><input name="four" value = "2" type="radio" required></td>
+            <td><input name="four" value = "3" type="radio" required></td>
+            <td><input name="four" value = "4" type="radio" required></td>
+            <td><input name="four" value = "5" type="radio" required></td>
+            <th scope="row">When I walk up a hill or a flight of stairs I am completely out of breath<br>当我在爬坡或爬一层楼梯时，我感觉非常喘不过气来</th>
+          </tr>
+          <tr>
+            <th scope="row">  I am not limited to doing any activities at home<br>我的居家活动不会受到限制</th>
+            <td><input name="five" value = "0" type="radio" required></td>
+            <td><input name="five" value = "1" type="radio" required></td>
+            <td><input name="five" value = "2" type="radio" required></td>
+            <td><input name="five" value = "3" type="radio" required></td>
+            <td><input name="five" value = "4" type="radio" required></td>
+            <td><input name="five" value = "5" type="radio" required></td>
+            <th scope="row">  I am completely limited to doing all activities at home<br>我的居家活动受到很大的限制</th>
+          </tr>
+          <tr>
+            <th scope="row">I am confident leaving my home despite my lung condition<br>尽管我有肺部疾病，我还是有信心外出</th>
+            <td><input name="six" value = "0" type="radio" required></td>
+            <td><input name="six" value = "1" type="radio" required></td>
+            <td><input name="six" value = "2" type="radio" required></td>
+            <td><input name="six" value = "3" type="radio" required></td>
+            <td><input name="six" value = "4" type="radio" required></td>
+            <td><input name="six" value = "5" type="radio" required></td>
+            <th scope="row"> I am not confident leaving my home at all because of my lung condition<br>因为我的肺部疾病，我完全没有信心外出</th>
+          </tr>
+          <tr>
+            <th scope="row">I sleep soundly<br>我睡得安稳</th>
+            <td><input name="seven" value = "0" type="radio" required></td>
+            <td><input name="seven" value = "1" type="radio" required></td>
+            <td><input name="seven" value = "2" type="radio" required></td>
+            <td><input name="seven" value = "3" type="radio" required></td>
+            <td><input name="seven" value = "4" type="radio" required></td>
+            <td><input name="seven" value = "5" type="radio" required></td>
+            <th scope="row">I do not sleep soundly because of my lung condition<br>因为我的肺部疾病，我睡得不安稳</th>
+          </tr>
+          <tr>
+            <th scope="row">I have lots of energy<br>我活力旺盛</th>
+            <td><input name="eight" value = "0" type="radio" required></td>
+            <td><input name="eight" value = "1" type="radio" required></td>
+            <td><input name="eight" value = "2" type="radio" required></td>
+            <td><input name="eight" value = "3" type="radio" required></td>
+            <td><input name="eight" value = "4" type="radio" required></td>
+            <td><input name="eight" value = "5" type="radio" required></td>
+            <th scope="row">I have no energy at all<br>我一点活力都没有</th>
+          </tr>
+        </tbody>
+      </table>
+      <div class="buttons">
+        <button id="calc" type="button" class="btn btn-success" >Calculate</button>
+        <button id="clear" type="button" class="btn btn-danger">Clear</button>   
+        </div> 
+    </div>
+    <hr>
+    <div class="container message">
+        <p id="message"></p>
+        <p id="level"></p>
+        <p id="clinical"></p>
+        <p id="recommendation"></p>
+    </div>
+  </body>
+  <script src="js/cat.js"></script>
+</html>

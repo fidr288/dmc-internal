@@ -1,0 +1,110 @@
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/epworth.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet"> 
+
+    <title>Epworth sleep scre</title>
+  </head>
+  <body>
+      <nav class="navbar fixed-top navbar-light bg-light">
+          <a class="navbar-brand" href="./index.html">Home</a>
+      </nav>
+      <div class="container">
+        <h3 style="padding-top: 60px">Epworth sleep score</h3>
+        <hr>
+        <h4>How likely are you to doze off or fall asleep in the following situations, in contrast to feeling just tired? This refers to your usual way of life in recent times.<br>
+            你曾否在以下的活动中出现打瞌睡或睡着的情況而不仅仅是感到累？可能你最近沒有进行某些活动，你可就以往的表现來作出评估，在下表中选择最符合的选项。</h4>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">would never doze<br>未曾发生瞌睡</th>
+            <th scope="col">slight chance of dozing<br>很少机会瞌睡</th>
+            <th scope="col">moderate chance of dozing<br>中等机会瞌睡</th>
+            <th scope="col">high chance of dozing<br>很大机会瞌睡</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Sitting and reading<br>坐着阅读</th>
+            <td><input name="one" value = "0" type="radio" required></td>
+            <td><input name="one" value = "1" type="radio" required></td>
+            <td><input name="one" value = "2" type="radio" required></td>
+            <td><input name="one" value = "3" type="radio" required></td>
+          </tr>
+          <tr>
+            <th scope="row">Watching TV<br>看电视</th>
+            <td><input name="two" value = "0" type="radio" required></td>
+            <td><input name="two" value = "1" type="radio" required></td>
+            <td><input name="two" value = "2" type="radio" required></td>
+            <td><input name="two" value = "3" type="radio" required></td>
+          </tr>
+          <tr>
+            <th scope="row">Sitting, inactive in a public place (e.g. a theatre or a meeting)<br>
+                在公共场所坐下（如戏院或会议中）</th>
+            <td><input name="three" value = "0" type="radio" required></td>
+            <td><input name="three" value = "1" type="radio" required></td>
+            <td><input name="three" value = "2" type="radio" required></td>
+            <td><input name="three" value = "3" type="radio" required></td>
+          </tr>
+          <tr>
+            <th scope="row">As a passenger in a car for an hour without a break<br>
+                坐车一小时中间未间断</th>
+            <td><input name="four" value = "0" type="radio" required></td>
+            <td><input name="four" value = "1" type="radio" required></td>
+            <td><input name="four" value = "2" type="radio" required></td>
+            <td><input name="four" value = "3" type="radio" required></td>
+          </tr>
+          <tr>
+            <th scope="row">Lying down to rest  in the afternoon when circumstances permit
+                <br>于环境许可时躺下休息</th>
+            <td><input name="five" value = "0" type="radio" required></td>
+            <td><input name="five" value = "1" type="radio" required></td>
+            <td><input name="five" value = "2" type="radio" required></td>
+            <td><input name="five" value = "3" type="radio" required></td>
+          </tr>
+          <tr>
+            <th scope="row">Sitting and talking to someone<br>
+                坐着和别人交谈</th>
+            <td><input name="six" value = "0" type="radio" required></td>
+            <td><input name="six" value = "1" type="radio" required></td>
+            <td><input name="six" value = "2" type="radio" required></td>
+            <td><input name="six" value = "3" type="radio" required></td>
+          </tr>
+          <tr>
+            <th scope="row">Sitting quietly after a lunch without alcohol<br>
+                午餐后坐下休息（没有喝酒的情況下)</th>
+            <td><input name="seven" value = "0" type="radio" required></td>
+            <td><input name="seven" value = "1" type="radio" required></td>
+            <td><input name="seven" value = "2" type="radio" required></td>
+            <td><input name="seven" value = "3" type="radio" required></td>
+          </tr>
+          <tr>
+            <th scope="row">In car, while stopped for a few minutes in the traffic<br>
+                乘车或驾车时遇上停车等候</th>
+            <td><input name="eight" value = "0" type="radio" required></td>
+            <td><input name="eight" value = "1" type="radio" required></td>
+            <td><input name="eight" value = "2" type="radio" required></td>
+            <td><input name="eight" value = "3" type="radio" required></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="buttons">
+        <button id="calc" type="button" class="btn btn-success" >Calculate</button>
+        <button id="clear" type="button" class="btn btn-danger">Clear</button>   
+        </div> 
+    </div>
+    <hr>
+    <div class="container message">
+        <p id="message"></p>
+        <p id="level"></p>
+    </div>
+  </body>
+  <script src="js/epworth.js"></script>
+</html>

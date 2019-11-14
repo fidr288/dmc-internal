@@ -104,12 +104,12 @@ made from wood or any other material, produce sound.made from wood or any other 
 <script>
     let mb7 = document.getElementById("mBtn7");
     mb7.addEventListener("click",() => {
-      rose = parseInt(document.querySelector('input[name="rose"]:checked').value);
-      chair = parseInt(document.querySelector('input[name="chair"]:checked').value);
-      hand = parseInt(document.querySelector('input[name="hand"]:checked').value);
-      blue = parseInt(document.querySelector('input[name="blue"]:checked').value);
-      spoon = parseInt(document.querySelector('input[name="spooon"]:checked').value);
-      mScore7 = rose + chair + hand + blue + spoon;
+      // rose = parseInt(document.querySelector('input[name="rose"]:checked').value);
+      // chair = parseInt(document.querySelector('input[name="chair"]:checked').value);
+      // hand = parseInt(document.querySelector('input[name="hand"]:checked').value);
+      // blue = parseInt(document.querySelector('input[name="blue"]:checked').value);
+      // spoon = parseInt(document.querySelector('input[name="spoon"]:checked').value);
+      mScore7 = parseInt(document.querySelector('input[name="rose"]:checked').value) + parseInt(document.querySelector('input[name="chair"]:checked').value) + parseInt(document.querySelector('input[name="hand"]:checked').value) + parseInt(document.querySelector('input[name="blue"]:checked').value) + parseInt(document.querySelector('input[name="spoon"]:checked').value);
       localStorage.setItem('m7', mScore7);
     });
 </script>

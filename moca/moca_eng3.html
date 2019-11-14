@@ -34,6 +34,12 @@
 </div>
 <!-- <script type="text/javascript" src="../js/button.js"></script> -->
 <script type="text/javascript" src="../js/timer.js"></script>
-any
+<script>
+    let mb3 = document.getElementById("mBtn4");
+    mb3.addEventListener("click",() => {
+      mScore3 = document.querySelector('input[name="ms4"]:checked').value;
+      localStorage.setItem('m3', mScore3);
+    });
+    </script>
 </body>
 </html>

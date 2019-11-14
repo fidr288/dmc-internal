@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="../css/moca.css">
 </head>
 
-<body onload="init()">
+<body>
 <nav class="navbar fixed-top navbar-light bg-light">
     <a class="navbar-brand" href="./index.html">Home</a>
 </nav>
@@ -41,7 +41,7 @@
     </div>
 <!-- <script type="text/javascript" src="../js/sketchpad.js"></script> -->
 <script>
-        let initial = document.querySelectorAll("a");
+        let initial = document.querySelectorAll(".btn");
         inital.addEventListener("click",() => {
           education = parseInt(document.querySelector('input[name="education"]:checked').value);
           literacy = parseInt(document.querySelector('input[name="literacy"]:checked').value);

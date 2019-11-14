@@ -70,9 +70,9 @@
                       </tr>
                 </tbody>
                 </table>
-
+                <h3 id="total"></h3>
     </div>
-    <h3 id="total">Total</h3>
+   
             <a href="../index.html" class="btn btn-danger" id="mtbnfinal">Exit and return to home</a>
     </div>
 <!-- <script type="text/javascript" src="../js/sketchpad.js"></script> -->
@@ -102,7 +102,10 @@
       document.getElementById("10").innerText = s10 + "/3";
       document.getElementById("e").innerText = edu;
       document.getElementById("l").innerText = lit;
-      document.getElementById("total").innerText = total + "/30";
+      document.getElementById("total").innerText = "Total score " + total + "/30";
+      document.getElementById("mtbnfinal").addEventListener("click",() => {
+      localStorage.clear();
+    });
 </script>
 </body>
 </html>

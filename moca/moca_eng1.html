@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>MOCA</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="../css/moca.css">
+</head>
+
+<body onload="init()">
+<nav class="navbar fixed-top navbar-light bg-light">
+    <a class="navbar-brand" href="./index.html">Home</a>
+</nav>
+<div class="container" style="padding-top: 60px">
+    <h3>1. Executive function</h3>
+    <hr>
+    <div id="sketchpadapp">
+        <canvas id="sketchpad" height="345" width="600" ></canvas>
+        <input class="btn btn-sm btn-outline-success" type="submit" value="Clear Drawing" id="clearbutton" onclick="clearCanvas(canvas,ctx);">  
+</div>
+
+<div class="container">
+        <h4 style="margin-top: 1em;">Instructions to tell patients</h4>
+    <ul>
+    <li>Draw a line alternating between a square with a number and a square with dots in increasing order.</li>
+    <li>Begin here [point to the square with the number 1] and draw a line from the square with the number 1 to the square with one dot [point to the square with one dot].</li> 
+    <li>Then draw a line to the square with the number 2 [point to the square with number 2]then to the square with two dots [point to the square with two dots]and so on.</li>
+    <li>End here [point to the square with six dots].</li>
+    </ul>
+</div>
+</div>
+
+<div class="container">
+    <h4>Score</h4>
+    <ul>
+    <li>1 point if the subject successfully  draws  the correct pattern on the first attempt without any errors or self-corrections.</li>
+    <li>No points if the subject draws an incorrect pattern or makes an error, even if it is immediately self-corrected.</li>
+    </ul>
+    <label for="r0">0</label>
+    <input id= "r0" name="ms1" value = "0" type="radio" required>
+    <label for="r1">1</label>
+    <input id="r1" name="ms1" value = "1" type="radio" required>
+    <hr>
+    <a class="btn btn-sm btn-info"href="moca_eng2.html" id="mBtn1">Continue to part 2</a>
+</div> 
+<script type="text/javascript" src="../js/sketchpad.js"></script>
+<!-- <script type="text/javascript" src="../js/button.js"></script> -->
+<script>
+let mb1 = document.getElementById("mBtn1");
+mb1.addEventListener("click",() => {
+  mScore1 = document.querySelector('input[name="ms1"]:checked').value;
+  localStorage.setItem('m1', mScore1);
+});
+</script>
+</body>
+</html>

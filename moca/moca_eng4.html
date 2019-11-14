@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>MOCA4</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="../css/moca.css">
+</head>
+
+<body>
+
+<div class="container" style="padding-top: 60px">
+    <h3>4. Orientation</h3>
+    <hr>
+    <h3>Scoring</h3>
+    <ul>
+        <li>For time, an answer within 2 hours of the actual time is ok</li>
+        <li>Must give exact day of the week, month, year.</li>
+        <li>Must give exact place (name of clinic, office) and city</li>
+    </ul>
+    <hr>
+    <h3>Questions</h3>
+    <h5><em>“Without looking at your watch, tell me approximately what time it is.”</em></h5>
+    <table class="table table-sm">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col" style="width: 30%"></th>
+                <th scope="col">Correct</th>
+                <th scope="col">Wrong</th>  
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">time (± 2 hr)</th>
+                <td> <input  name="time" value = "1" type="radio" required></td>
+                <td> <input  name="time" value = "0" type="radio" required></td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <h5><em>“Now, tell me what day of the week it is and what month and year it is.”</em></h5>
+    <table class="table table-sm table-striped">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col" style="width: 30%"></th>
+                <th scope="col">Correct</th>
+                <th scope="col">Wrong</th>  
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">day</th>
+                <td> <input name="day" value = "1" type="radio" required></td>
+                <td> <input name="day" value = "0" type="radio" required></td>
+            </tr>
+            <tr>
+                <th scope="row">month</th>
+                <td> <input name="month" value = "1" type="radio" required></td>
+                <td> <input name="month" value = "0" type="radio" required></td>
+            </tr>
+            <tr>
+                <th scope="row">year</th>
+                <td> <input name="year" value = "1" type="radio" required></td>
+                <td> <input name="year" value = "0" type="radio" required></td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <h5><em>“Tell me the name of this place and which city we are in.”</em></h5>
+    <table class="table table-sm table-striped">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col" style="width: 30%"></th>
+                <th scope="col">Correct</th>
+                <th scope="col">Wrong</th>  
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">place</th>
+                <td> <input name="place" value = "1" type="radio" required></td>
+                <td> <input name="place" value = "0" type="radio" required></td>
+            </tr>
+            <tr>
+                <th scope="row">city</th>
+                <td> <input name="city" value = "1" type="radio" required></td>
+                <td> <input name="city" value = "0" type="radio" required></td>
+            </tr>
+     
+        </tbody>
+    </table>
+    <hr>
+</div> 
+<div class="container" style="margin-top: 2em;">
+<a class="btn btn-sm btn-info"href="moca_eng5.html" id="mBtn4">Continue to part 5</a>
+</div>
+<!-- <script type="text/javascript" src="../js/button.js"></script> -->
+<script>
+let mb4 = document.getElementById("mBtn4");
+mb4.addEventListener("click",() => {
+  time = parseInt(document.querySelector('input[name="time"]:checked').value);
+  day = parseInt(document.querySelector('input[name="day"]:checked').value);
+  month = parseInt(document.querySelector('input[name="month"]:checked').value);
+  year = parseInt(document.querySelector('input[name="year"]:checked').value);
+  place = parseInt(document.querySelector('input[name="place"]:checked').value);
+  city = parseInt(document.querySelector('input[name="city"]:checked').value);
+  mScore4 = time + day + month + year + place + city
+  localStorage.setItem('m4', mScore4);
+});
+  
+</script>
+</body>
+</html>

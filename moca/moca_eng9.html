@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>MOCA9</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="../css/moca.css">
+</head>
+
+<body>
+
+<div class="container" style="padding-top: 60px">
+    <h3>8. Naming</h3>
+    <hr>
+    <img class="img-fluid" src="../files/naming.png" alt="">
+
+    <hr>
+    <br><br><br><br><br><br><br><br>
+    <div class="container">
+        <h3 class="notok">Animals must be exact</h3>
+    <table class="table table-sm table-striped">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col" style="width: 30%"></th>
+                <th scope="col">Correct</th>
+                <th scope="col">Wrong</th>  
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">zebra</th>
+                <td> <input name="zebra" value = "1" type="radio" required></td>
+                <td> <input name="zebra" value = "0" type="radio" required></td>
+            </tr>
+            <tr>
+                <th scope="row">peacock</th>
+                <td> <input name="peacock" value = "1" type="radio" required></td>
+                <td> <input name="peacock" value = "0" type="radio" required></td>
+            </tr>
+            <tr>
+                <th scope="row">tiger</th>
+                <td> <input name="tiger" value = "1" type="radio" required></td>
+                <td> <input name="tiger" value = "0" type="radio" required></td>
+            </tr>
+             <tr>
+                <th scope="row">butterfly</th>
+                <td> <input name="butterfly" value = "1" type="radio" required></td>
+                <td> <input name="butterfly" value = "0" type="radio" required></td>
+            </tr>
+        </tbody>
+    </table>
+
+    </div>
+</div> 
+<div class="container" style="margin-top: 2em;">
+<a class="btn btn-sm btn-info"href="moca_eng10a.html" id="mBtn9">Continue to part 10</a>
+</div>
+<!-- <script type="text/javascript" src="../anyjs/button.js"></script> -->
+<script>
+    let mb9 = document.getElementById("mBtn9");
+    mb9.addEventListener("click",() => {
+      zebra = parseInt(document.querySelector('input[name="zebra"]:checked').value);
+      peacock = parseInt(document.querySelector('input[name="peacock"]:checked').value);
+      tiger = parseInt(document.querySelector('input[name="tiger"]:checked').value);
+      butterfly = parseInt(document.querySelector('input[name="butterfly"]:checked').value);
+      mScore9 = zebra + peacock + tiger + butterfly;
+      localStorage.setItem('m9', mScore9);
+    });
+</script>
+</body>
+</html>

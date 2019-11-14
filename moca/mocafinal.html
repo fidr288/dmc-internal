@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>MOCA final</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="../css/moca.css">
+</head>
+
+<body>
+
+</nav>
+    <div class="container"  style="padding-top: 100px">
+            
+            <table class="table table-sm">
+                    <thead class="thead-dark">
+                      <tr>
+                        <th scope="col">Category</th>
+                        <th scope="col">Score</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">Executive function</th>
+                        <td id="1"></td>
+                      </tr>
+            
+                      <tr>
+                            <th scope="row">Fluency</th>
+                            <td id="3"></td>
+                      </tr>
+
+                      <tr>
+                            <th scope="row">Orientation</th>
+                            <td id="4"></td>
+                      </tr>
+                      <tr>
+                            <th scope="row">Calculations</th>
+                            <td id="5"></td>
+                      </tr>
+                      <tr>
+                            <th scope="row">Abstraction</th>
+                            <td id="6"></td>
+                      </tr>
+                      <tr>
+                            <th scope="row">Delayed recall</th>
+                            <td id="7"></td>
+                      </tr>
+                      <tr>
+                            <th scope="row">Visuoperception</th>
+                            <td id="8"></td>
+                      </tr>
+                      <tr>
+                            <th scope="row">Naming</th>
+                            <td id="9"></td>
+                      </tr>
+                      <tr>
+                            <th scope="row">Attention</th>
+                            <td id="10"></td>
+                      </tr>
+                      <tr>
+                            <th scope="row">Education</th>
+                            <td id="e"></td>
+                      </tr>
+                      <tr>
+                            <th scope="row">Literacy</th>
+                            <td id="l"></td>
+                      </tr>
+                </tbody>
+                </table>
+
+    </div>
+    <h3 id="total">Total</h3>
+            <a href="../index.html" class="btn btn-danger" id="mtbnfinal">Exit and return to home</a>
+    </div>
+<!-- <script type="text/javascript" src="../js/sketchpad.js"></script> -->
+<script>
+      let s1 = localStorage.getItem('m1');
+      let s3 = localStorage.getItem('m3');
+      let s4 = localStorage.getItem('m4');
+      let s5 = localStorage.getItem('m5');
+      let s6 = localStorage.getItem('m6');
+      let s7 = localStorage.getItem('m7');
+      let s8 = localStorage.getItem('m8');
+      let s9 = localStorage.getItem('m9');
+      let s10a = localStorage.getItem('m10a');
+      let s10b = localStorage.getItem('m10b');
+      let edu = localStorage.getItem('edu');
+      let lit = localStorage.getItem('lit');
+      s10 = parseInt(s10a)+parseInt(s10b);
+      total = parseInt(s1) + parseInt(s3) + parseInt(s4)+ parseInt(s5)+ parseInt(s6)+ parseInt(s7) + parseInt(s8) + parseInt(s9) + parseInt(s10) + parseInt(edu) + parseInt(lit)
+      document.getElementById("1").innerText = s1;
+      document.getElementById("3").innerText = s3;
+      document.getElementById("4").innerText = s4;
+      document.getElementById("5").innerText = s5;
+      document.getElementById("6").innerText = s6;
+      document.getElementById("7").innerText = s7;
+      document.getElementById("8").innerText = s8;
+      document.getElementById("9").innerText = s9;
+      document.getElementById("10").innerText = s10;
+      document.getElementById("e").innerText = edu;
+      document.getElementById("l").innerText = lit;
+      document.getElementById("total").innerText = total;
+</script>
+</body>
+</html>

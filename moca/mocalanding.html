@@ -36,13 +36,20 @@
         </table>
     </div>
     <div class="container"  style="padding-top: 2em">
-        <a href="moca_eng1.html" class="btn btn-success">English version</a>
-        <a href="moca_chi1.html" class="btn btn-info">Chinese version</a>
+        <a href="moca_eng1.html" class="btn btn-success" id="eng">English version</a>
+        <a href="moca_chi1.html" class="btn btn-info" id="chi">Chinese version</a>
     </div>
 <!-- <script type="text/javascript" src="../js/sketchpad.js"></script> -->
 <script>
-        let land = document.querySelectorAll(".btn");
-        land.addEventListener("click",() => {
+        let eng = document.getElementById("eng");
+        let chi = document.getElementById("chi");
+        eng.addEventListener("click",() => {
+          education = parseInt(document.querySelector('input[name="education"]:checked').value);
+          literacy = parseInt(document.querySelector('input[name="literacy"]:checked').value);
+          localStorage.setItem('edu', education);
+          localStorage.setItem('lit', literacy);
+        });
+        chi.addEventListener("click",() => {
           education = parseInt(document.querySelector('input[name="education"]:checked').value);
           literacy = parseInt(document.querySelector('input[name="literacy"]:checked').value);
           localStorage.setItem('edu', education);

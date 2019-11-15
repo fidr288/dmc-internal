@@ -1,0 +1,46 @@
+10b copy<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>MOCA5</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="../css/moca.css">
+</head>
+
+<body>
+<nav class="navbar fixed-top navbar-light bg-light">
+    <a class="navbar-brand" href="./index.html">Home</a>
+</nav>
+<div class="container" style="padding-top: 60px">
+    <h3>5. 计算</h3>
+    <hr>
+    <h3>Question</h3>
+    <p><em>“想象您有很多1元、5元和10元的钱。现在您购买了一个13元的东西，需要付给我13元，请给我3种付款方式。我不会找您零钱，需要您付给我13元整。”</em></p> 
+    <p>If the patient provides a combination that requires change, 
+        provide the following prompt once: "还有其他方法吗？” </p>
+    <hr>
+    <input id= "r0" name="ms5" value = "3" type="radio" required>
+    <label for="r0"> 3 - 4 combinations </label><br>
+    <input id= "r1" name="ms5" value = "2" type="radio" required>
+    <label for="r1"> 2 combinations </label><br>
+    <input id= "r2" name="ms5" value = "1" type="radio" required>
+    <label for="r2"> 1 combination </label><br>
+    <input id= "r3" name="ms5" value = "0" type="radio" required>
+    <label for="r3"> 0 combinations </label><br>
+    <hr>
+</div> 
+<div class="container" style="margin-top: 2em;">
+<a class="btn btn-sm btn-info"href="moca_chi6.html" id="mBtn5">Continue to part 6</a>
+</div>
+<!-- <script type="text/javascript" src="../js/button.js"></script> -->
+<script>
+    let mb5 = document.getElementById("mBtn5");
+    mb5.addEventListener("click",() => {
+      mScore5 = document.querySelector('input[name="ms5"]:checked').value;
+      localStorage.setItem('m5', mScore5);
+    });
+</script>
+</body>
+</html>

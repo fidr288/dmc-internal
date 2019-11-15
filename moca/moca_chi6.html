@@ -1,0 +1,103 @@
+10b copy<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>MOCA6</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="../css/moca.css">
+</head>
+
+<body>
+<nav class="navbar fixed-top navbar-light bg-light">
+    <a class="navbar-brand" href="./index.html">Home</a>
+</nav>
+<div class="container" style="padding-top: 60px">
+    <h3>6. 抽象</h3>
+    <hr>
+    <h3>Question</h3>
+    <p><em>“请您说说桔子和香蕉属于什么类别？” If the patient answers in a concrete manner,
+            ask once: “请再换一种说法，它们还属于什么类别？”If the subject does not
+            respond correctly [水果], the examiner says: “您说的没错，也可以说他们都是水果。". No additional instruction or clarification is given.</em></p>
+            
+    <hr>
+    <h3>Questions</h3>
+    <h5><em>“现在您再说说火车和轮船属于什么类别？”</em></h5>
+    <p class="ok">OK: 交通工具，旅行用的，运输工具。</p>
+    <p class="notok">Not OK: 它们都是钢铁做的。它们都有发动机。它们都耗汽油。</p>
+    <table class="table table-sm table-striped">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col" style="width: 30%"></th>
+                <th scope="col">Correct</th>
+                <th scope="col">Wrong</th>  
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">火车和轮船</th>
+                <td> <input name="transport" value = "1" type="radio" required></td>
+                <td> <input name="transport" value = "0" type="radio" required></td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <h5><em>您再说说北方和南方属于什么类别？”</em></h5>
+    <p class="ok">OK: 方向，地方。</p>
+    <table class="table table-sm table-striped">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col" style="width: 30%"></th>
+                <th scope="col">Correct</th>
+                <th scope="col">Wrong</th>  
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">北方和南方</th>
+                <td> <input name="direction" value = "1" type="radio" required></td>
+                <td> <input name="direction" value = "0" type="radio" required></td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <h5><em>“您再说说锣鼓和笛子属于什么类别？”</em></h5>
+    <p class ="ok">OK: 乐器，娱乐工具。</p>
+    <p class="notok">Not OK: 它们都是木头或其他材料做的。它们都可以发声音。</p>
+
+    <table class="table table-sm table-striped">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col" style="width: 30%"></th>
+                <th scope="col">Correct</th>
+                <th scope="col">Wrong</th>  
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">锣鼓和笛子</th>
+                <td> <input name="music" value = "1" type="radio" required></td>
+                <td> <input name="music" value = "0" type="radio" required></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+</div> 
+<div class="container" style="margin-top: 2em;">
+<a class="btn btn-sm btn-info"href="moca_chi7.html" id="mBtn6">Continue to part 7</a>
+</div>
+<!-- <script type="text/javascript" src="../js/button.js"></script> -->
+<script>
+    let mb6 = document.getElementById("mBtn6");
+    mb6.addEventListener("click",() => {
+      transport = parseInt(document.querySelector('input[name="transport"]:checked').value);
+      direction = parseInt(document.querySelector('input[name="direction"]:checked').value);
+      music = parseInt(document.querySelector('input[name="music"]:checked').value);
+      mScore6 = transport + direction + music;
+      localStorage.setItem('m6', mScore6);
+    });
+</script>
+</body>
+</html>

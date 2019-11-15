@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>MOCA3</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="../css/moca.css">
+</head>
+
+<body>
+<div class="container" style="padding-top: 60px">
+    <h3>3. 流畅性</h3>
+    <hr>
+    <p><em>“请您尽可能快、尽可能多地说出您所知道的水果的名称。时间是1分钟，准备好了吗？</em></p>
+    <hr>
+    <div><h1 id="time">01:00</h1> </div>
+    <button class="btn btn-danger" id="timer">START TIMER</button>
+    <!-- <button class="btn btn-success" id="reset">RESET</button> -->
+    <hr>
+    <div class="container">
+    <h3>Number of fruits named in 1 minute</h3>
+    <input id= "r2" name="ms3" value = "2" type="radio" required>
+    <label for="r2"> >13</label><br>
+    <input id= "r1" name="ms3" value = "1" type="radio" required>
+    <label for="r1"> 8-12 </label><br>
+    <input id= "r0" name="ms3" value = "0" type="radio" required>
+    <label for="r0"> 7 or less</label>
+    </div>
+</div> 
+<div class="container" style="margin-top: 2em;">
+<a class="btn btn-sm btn-info"href="moca_chi4.html" id="mBtn3">Continue to part 4</a>
+</div>
+<!-- <script type="text/javascript" src="../js/button.js"></script> -->
+<script type="text/javascript" src="../js/timer.js"></script>
+<script>
+    let mb3 = document.getElementById("mBtn3");
+    mb3.addEventListener("click",() => {
+      mScore3 = document.querySelector('input[name="ms3"]:checked').value;
+      localStorage.setItem('m3', mScore3);
+    });
+    </script>
+</body>
+</html>

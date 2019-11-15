@@ -71,9 +71,11 @@
                 </tbody>
                 </table>
                 <h3 id="total"></h3>
+                <h3 id="dx"></h3>
+            <a href="../index.html" class="btn btn-danger" id="mtbnfinal">Exit and return to home</a>
+
     </div>
    
-            <a href="../index.html" class="btn btn-danger" id="mtbnfinal">Exit and return to home</a>
     </div>
 <!-- <script type="text/javascript" src="../js/sketchpad.js"></script> -->
 <script>
@@ -103,6 +105,17 @@
       document.getElementById("e").innerText = edu;
       document.getElementById("l").innerText = lit;
       document.getElementById("total").innerText = "Total score " + total + "/30";
+      if (total < 6 ){
+            document.getElementById("dx").innerText = "Severe dementia";
+      }else if (total <=10){
+            document.getElementById("dx").innerText = "Moderate dementia";
+      }else if (total <= 17){
+            document.getElementById("dx").innerText = "Mild dementia";
+      }else if (total <= 26){
+            document.getElementById("dx").innerText = "Mild cognitive impairment";
+      }else {
+            document.getElementById("dx").innerText = "Normal cognitive function";
+      };
       document.getElementById("mtbnfinal").addEventListener("click",() => {
       localStorage.clear();
     });

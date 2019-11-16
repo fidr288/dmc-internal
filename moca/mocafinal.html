@@ -151,18 +151,24 @@
       document.getElementById("10").innerText = s10 + "/3";
       document.getElementById("e").innerText = edu;
       document.getElementById("l").innerText = lit;
-      document.getElementById("total").innerText = "Total score " + total + "/30";
-      if (total < 6 ){
-            document.getElementById("dx").innerText = "Severe dementia";
-      }else if (total <=10){
-            document.getElementById("dx").innerText = "Moderate dementia";
-      }else if (total <= 17){
-            document.getElementById("dx").innerText = "Mild dementia";
-      }else if (total <= 26){
-            document.getElementById("dx").innerText = "Mild cognitive impairment";
-      }else {
-            document.getElementById("dx").innerText = "Normal cognitive function";
+      
+      if(isNaN(total)==true){
+            document.getElementById("total").innerText = "You have missed some questions, please redo specific page";
+      }else{
+            document.getElementById("total").innerText = "Total score " + total + "/30";
+            if (total < 6 ){
+                  document.getElementById("dx").innerText = "Severe dementia";
+            }else if (total <=10){
+                  document.getElementById("dx").innerText = "Moderate dementia";
+            }else if (total <= 17){
+                  document.getElementById("dx").innerText = "Mild dementia";
+            }else if (total <= 26){
+                  document.getElementById("dx").innerText = "Mild cognitive impairment";
+            }else {
+                  document.getElementById("dx").innerText = "Normal cognitive function";
       };
+      };
+      
       document.getElementById("mtbnfinal").addEventListener("click",() => {
       localStorage.clear();
     });

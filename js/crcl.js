@@ -10,7 +10,7 @@ button.addEventListener("click", function(){
         crcl = +((140-age)*mass*1.23/cr).toFixed(2);
     } else {
         crcl = +((140-age)*mass*1.04/cr).toFixed(2);
-    };2350
+    };
 
     if (crcl < 10){
         document.getElementById("allopurinol").textContent = "Allopurinol dose = 100mg alternate days (max 100mg daily)";

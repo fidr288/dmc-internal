@@ -11,11 +11,11 @@ button.addEventListener("click", function(){
     total = +(one+two+three+four+five);
     document.getElementById("message").textContent = "Total score = " + total;
     if (total < 15){
-        document.getElementById("level").textContent = "Poorly or uncontrolled asthma 您的哮喘未受到控制。請立即和您的醫護人員聯絡。";
+        document.getElementById("level").textContent = "Poorly or uncontrolled asthma 您的哮喘未受到控制。请立即和您的医护人员联络。";
     } else if (total <= 19) {
-        document.getElementById("level").textContent = "Somewhat controlled asthma 您的哮喘可能未達致良好受控的程度。請與醫護人員商討如何協助改善控制哮喘的方法。";
+        document.getElementById("level").textContent = "Somewhat controlled asthma 您的哮喘可能未达致良好受控的程度。请与医护人员商讨如何协助改善控制哮喘的方法。";
     } else{
-        document.getElementById("level").textContent = "Well or completely controlled asthma 您的哮喘暫時控制良好。然而，哮喘受控的情況可能隨時有變動，因此建議您定期進行本測試, 和醫護人員一起檢視您的哮喘控制情況。";
+        document.getElementById("level").textContent = "Well or completely controlled asthma 您的哮喘暂时控制良好。然而，哮喘受控的情况可能随时有变动，因此建议您定期进行本测试, 和医护人员一起检视您的哮喘控制情况。";
     };
 });
 

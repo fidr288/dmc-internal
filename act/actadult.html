@@ -1,0 +1,89 @@
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/actadult.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet"> 
+
+    <title>Act asthma</title>
+  </head>
+  <body>
+      <nav class="navbar fixed-top navbar-light bg-light">
+          <a class="navbar-brand" href="./index.html">Home</a>
+      </nav>
+      <div class="container">
+        <h3 style="padding-top: 60px">Act asthma score</h3>
+        <hr>
+  <table class="table table-sm">
+      <!-- <thead class="thead-dark">
+        <tr>
+          <th scope="col"></th>
+          <th scope="col">All of the time<br>绝对没有</th>
+          <th scope="col">A little of the time<br>几天</th>
+          <th scope="col">Over half the days<br>超过一半</th>
+          <th scope="col">Nearly everyday<br>几乎每天</th>
+        </tr>
+      </thead> -->
+      <tbody>
+        <tr>
+          <th scope="row">In the past four weeks, how often did your asthma prevent you from getting as much done at work, school or home?<br>
+            在过去4周，你有多常因高血压而无法在办公地方，学校或家中完成平常能够做的事情？</th>
+          <td><input name="one" value = "1" type="radio" required><br>All of the time<br>所有时间</td>
+          <td><input name="one" value = "2" type="radio" required><br>Most of the time<br>经常如此</td>
+          <td><input name="one" value = "3" type="radio" required><br>Some of the time<br>有时如此</td>
+          <td><input name="one" value = "4" type="radio" required><br>A little of the time<br>很少如此</td>
+          <td><input name="one" value = "5" type="radio" required><br>Not at all<br>不曾如此</td>
+        </tr>
+        <tr>
+          <th scope="row">During the past four weeks, how often have you had shortness of breath?
+            <br>在过去4周，你试过多少次出现呼吸急促的情况？?</th>
+          <td><input name="two" value = "1" type="radio" required><br>More than once a day<br>一天超过1次</td>
+          <td><input name="two" value = "2" type="radio" required><br>Once a day<br>一天1次</td>
+          <td><input name="two" value = "3" type="radio" required><br>3 to 6 times a week<br>一周3至6次</td>
+          <td><input name="two" value = "4" type="radio" required><br>Once of twice a week<br>一周1或2次</td>
+          <td><input name="two" value = "5" type="radio" required><br>Not at all<br>没有试过</td>
+        </tr>
+        <tr>
+          <th scope="row"> During the past four weeks, how often did your asthma symptoms (wheezing, coughing, shortness of breath, chest tightness or pain) wake you up at night or earlier than usual in the morning?
+            <br>在過去4週，你試過多少次因哮喘病徵（喘鳴、咳嗽、呼吸急促、胸悶或胸痛）而在夜半醒來或在早上提早醒來？</th>
+          <td><input name="three" value = "1" type="radio" required>4 or more times a week<br>一周4晚或以上</td>
+          <td><input name="three" value = "2" type="radio" required>2-3 nights a week<br>一周2至3晚</td>
+          <td><input name="three" value = "3" type="radio" required>1 night a week<br>一周1次</td>
+          <td><input name="three" value = "4" type="radio" required>Less than 1 night a week<br>1或2次</td>
+          <td><input name="three" value = "5" type="radio" required>Not at all<br>没有试过</td>
+        </tr>
+        <tr>
+          <th scope="row"> During the past four weeks, how often have you used your reliever medication (such as your blue inhaler or rescue inhaler)?
+            <br>在过去4周，你用过多少次救急性康复器或雾化式药物？</th>
+          <td><input name="four" value = "1" type="radio" required><br>3 or more times a day<br>一天3次或3次以上</td>
+          <td><input name="four" value = "2" type="radio" required><br>1 or 2 times a day<br>一天1或2次</td>
+          <td><input name="four" value = "3" type="radio" required><br>2 to 3 times a week<br>一周2或3次</td>
+          <td><input name="four" value = "4" type="radio" required><br>Once a week or less<br>一周1次或将来</td>
+          <td><input name="four" value = "5" type="radio" required><br>Not at all<br>没有试过</td>
+        </tr>
+        <tr>
+          <th scope="row">How would you rate your asthma control during the past four weeks?            
+          <br>你如何评价过去4周的急性控制程度？</th>
+          <td><input name="five" value = "1" type="radio" required><br>Not controlled<br>完全不受控制</td>
+          <td><input name="five" value = "2" type="radio" required><br>Poorly controlled<br>控制不好</td>
+          <td><input name="five" value = "3" type="radio" required><br>Somewhat controlled<br>稍微保守</td>
+          <td><input name="five" value = "4" type="radio" required><br>Well controled<br>控制良好</td>
+          <td><input name="five" value = "5" type="radio" required><br>Completely controlled<br>完全受到控制</td>
+        </tr>
+    </table>
+    <div class="buttons">
+      <button id="calc" type="button" class="btn btn-success" >Calculate</button>
+      <button id="clear" type="button" class="btn btn-danger">Clear</button>   
+      </div> 
+  </div>
+  <div class="container message">
+      <h3 id="message"></h3>
+      <h3 id="level"></h3>
+  </div>
+  <script src="js/actadult.js"></script>
+</body>
+</html>

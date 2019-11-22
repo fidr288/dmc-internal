@@ -15,7 +15,7 @@ button.addEventListener("click", function(){
     if (total < 15){
         document.getElementById("level").textContent = "Poorly or uncontrolled asthma 哮喘病差或无法控制";
     } else if (total <= 19) {
-        document.getElementById("level").textContent = "Somewhat controlled asthma 某种程度上哮喘收控制";
+        document.getElementById("level").textContent = "Somewhat controlled asthma 某程度上哮喘收控制";
     } else{
         document.getElementById("level").textContent = "Well or completely controlled asthma 哮喘完全收控制";
     };

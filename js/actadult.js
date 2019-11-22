@@ -11,11 +11,11 @@ button.addEventListener("click", function(){
     total = +(one+two+three+four+five);
     document.getElementById("message").textContent = "Total score = " + total;
     if (total < 15){
-        document.getElementById("level").textContent = "Poorly or uncontrolled asthma";
+        document.getElementById("level").textContent = "Poorly or uncontrolled asthma 哮喘病差或无法控制";
     } else if (total <= 19) {
-        document.getElementById("level").textContent = "Somewhat controlled asthma ";
+        document.getElementById("level").textContent = "Somewhat controlled asthma 某程度上哮喘收控制";
     } else{
-        document.getElementById("level").textContent = "Well or completely controlled asthma ";
+        document.getElementById("level").textContent = "Well or completely controlled asthma 哮喘完全收控制";
     };
 });
 

@@ -50,11 +50,11 @@
         <tr>
           <th scope="row"> During the past four weeks, how often did your asthma symptoms (wheezing, coughing, shortness of breath, chest tightness or pain) wake you up at night or earlier than usual in the morning?
             <br>在過去4週，你試過多少次因哮喘病徵（喘鳴、咳嗽、呼吸急促、胸悶或胸痛）而在夜半醒來或在早上提早醒來？</th>
-          <td><input name="three" value = "1" type="radio" required>4 or more times a week<br>一周4晚或以上</td>
-          <td><input name="three" value = "2" type="radio" required>2-3 nights a week<br>一周2至3晚</td>
-          <td><input name="three" value = "3" type="radio" required>1 night a week<br>一周1次</td>
-          <td><input name="three" value = "4" type="radio" required>Less than 1 night a week<br>1或2次</td>
-          <td><input name="three" value = "5" type="radio" required>Not at all<br>没有试过</td>
+          <td><input name="three" value = "1" type="radio" required><br>4 or more times a week<br>一周4晚或以上</td>
+          <td><input name="three" value = "2" type="radio" required><br>2-3 nights a week<br>一周2至3晚</td>
+          <td><input name="three" value = "3" type="radio" required><br>1 night a week<br>一周1次</td>
+          <td><input name="three" value = "4" type="radio" required><br>Less than 1 night a week<br>1或2次</td>
+          <td><input name="three" value = "5" type="radio" required><br>Not at all<br>没有试过</td>
         </tr>
         <tr>
           <th scope="row"> During the past four weeks, how often have you used your reliever medication (such as your blue inhaler or rescue inhaler)?
@@ -75,15 +75,17 @@
           <td><input name="five" value = "5" type="radio" required><br>Completely controlled<br>完全受到控制</td>
         </tr>
     </table>
+    <hr>
+    <div class="container message">
+        <h3 id="message"></h3>
+        <h3 id="level"></h3>
+    </div>
     <div class="buttons">
       <button id="calc" type="button" class="btn btn-success" >Calculate</button>
       <button id="clear" type="button" class="btn btn-danger">Clear</button>   
       </div> 
   </div>
-  <div class="container message">
-      <h3 id="message"></h3>
-      <h3 id="level"></h3>
-  </div>
+
   <script src="../js/actadult.js"></script>
 </body>
 </html>

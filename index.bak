@@ -35,16 +35,17 @@
                   <h3>Admin</h3>
                 </div>
                 <ul class="list-group list-group-flush">
-                  <li class="list-group-item"><a href="http://192.168.0.68/interview?i=docassemble.enrolment:data/questions/enrolment.yml&new_sesssion=1">Enrolment Form</a></li>
+                  <li class="list-group-item"><a href="https://doc.dominionmedical.co.nz/interview?i=docassemble.enrolonline:data/questions/enrolonline.yml">Enrolment Form</a></li>
+                  <li class="list-group-item"><a href="https://doc.dominionmedical.co.nz/interview?i=docassemble.nonresonline:data/questions/nonresonline.yml">Non resident registration</a></li>
                   <li class="list-group-item"><a href="http://192.168.0.68/interview?i=docassemble.nhi:data/questions/nhi.yml&new_sesssion=1">NHI details if required</a></li>
-                  <li class="list-group-item"><a href="http://192.168.0.68/interview?i=docassemble.visa:data/questions/visa.yml&new_sesssion=1">Visa photos</a></li>
+                  <li class="list-group-item"><a href="https://doc.dominionmedical.co.nz/interview?i=docassemble.visaonline:data/questions/visaonline.yml">Visa photos</a></li>
                   <li class="list-group-item"><a href="http://192.168.0.68/interview?i=docassemble.complaint:data/questions/complaint.yml&new_sesssion=1" style="color:red;">Complaint form (for staff)</a></li>
                   <li class="list-group-item"><a href="http://192.168.0.68/interview?i=docassemble.complainfu:data/questions/complaint_followup.yml&new_sesssion=1" style="color:red;">Complaint followup</a></li>
                   <li class="list-group-item"><a href="http://192.168.0.68/interview?i=docassemble.patientcomplainfu:data/questions/patient_complaint.yml&new_sesssion=1" style="color:red;">Complaint form (for patient)</a></li>
                   <li class="list-group-item"><a href="http://192.168.0.68/interview?i=docassemble.incident:data/questions/incident.yml&new_sesssion=1" style="color:red;">Incident Form</a></li>
                   <li class="list-group-item"><a href="https://docs.google.com/spreadsheets/d/1881qyCZgFu4EPI8NM8244PqEkyulFx3unW2ZzwBR0Tg/edit?usp=sharing" target="_blank" style="color:red;">Complaints / Incident Register</a></li>
                   <li class="list-group-item"><a href="https://forms.gle/7ix5Z1ZBkktcPYjW6" target="_blank">Leave request</a></li>
-                  <li class="list-group-item"><a href="http://192.168.0.89/videostream.cgi?usr=admin" target="_blank">outside camera</a></li> 
+                  <li class="list-group-item"><a href="http://192.168.0.68:8765" target="_blank">camera</a></li> 
                   <li class="list-group-item"><a href="https://drive.google.com/drive/folders/1Ed12tEASa-mXA60V-IwAMokIuvt0lv7W?usp=sharing" target="_blank">Cornerstone files</a></li>
                   <li class="list-group-item"><a href="https://wiki.dominionmedical.co.nz">operation manual</a></li>
                 </ul>   

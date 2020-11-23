@@ -38,24 +38,31 @@
                   </div>
                 </div>
               
-              <li class="list-group-item"><a href="https://doc.dominionmedical.co.nz/interview?i=docassemble.patientcomplainfu:data/questions/patient_complaint.yml&new_sesssion=1" style="color:red;">Complaint form (for patient)</a></li>
             </ul>
           </div>
         </div>
 
         <div>
-          <div class="card border-dark">
+          <div class="card accordian border-dark" id="admin">
             <div class="card-header bg-dark" style ="color:white;">
               <h3>Admin</h3>
             </div>
             <ul class="list-group list-group-flush">
               <li class="list-group-item"><a href="./triage.html">Triage</a></li>
-              <li class="list-group-item"><a href="https://doc.dominionmedical.co.nz/interview?i=docassemble.complaint:data/questions/complaint.yml&new_sesssion=1" style="color:red;">Complaint form (for staff)</a></li>
-              <li class="list-group-item"><a href="https://doc.dominionmedical.co.nz/interview?i=docassemble.complainfu:data/questions/complaint_followup.yml&new_sesssion=1" style="color:red;">Complaint followup</a></li>
-              <li class="list-group-item"><a href="https://doc.dominionmedical.co.nz/interview?i=docassemble.incident:data/questions/incident.yml&new_sesssion=1" style="color:red;">Incident Form</a></li>
-              <li class="list-group-item"><a href="https://docs.google.com/spreadsheets/d/1881qyCZgFu4EPI8NM8244PqEkyulFx3unW2ZzwBR0Tg/edit?usp=sharing" target="_blank" style="color:red;">Complaints / Incident Register</a></li>
               <li class="list-group-item"><a href="https://forms.gle/7ix5Z1ZBkktcPYjW6" target="_blank">Leave request</a></li>
               <li class="list-group-item"><a href="http://192.168.0.68:8765" target="_blank">Cameras</a></li> 
+
+              <li class="list-group-item" ><button class="btn btn-info collapsed" type="button" data-toggle="collapse" data-target="#collapseAdmin" aria-expanded="false" aria-controls="collapseAdmin">Complaints/incidence</button></li>
+                <div id="collapseAdmin" class="collapse" data-parent="#admin">
+                  <div class="card-body">
+                    <li class="list-group-item"><a href="https://doc.dominionmedical.co.nz/interview?i=docassemble.patientcomplainfu:data/questions/patient_complaint.yml&new_sesssion=1" style="color:red;">Complaint form (for patient)</a></li>
+                    <li class="list-group-item"><a href="https://doc.dominionmedical.co.nz/interview?i=docassemble.complaint:data/questions/complaint.yml&new_sesssion=1" style="color:red;">Complaint form (for staff)</a></li>
+                    <li class="list-group-item"><a href="https://doc.dominionmedical.co.nz/interview?i=docassemble.complainfu:data/questions/complaint_followup.yml&new_sesssion=1" style="color:red;">Complaint followup</a></li>
+                    <li class="list-group-item"><a href="https://doc.dominionmedical.co.nz/interview?i=docassemble.incident:data/questions/incident.yml&new_sesssion=1" style="color:red;">Incident Form</a></li>
+                    <li class="list-group-item"><a href="https://docs.google.com/spreadsheets/d/1881qyCZgFu4EPI8NM8244PqEkyulFx3unW2ZzwBR0Tg/edit?usp=sharing" target="_blank" style="color:red;">Complaints / Incident Register</a></li>
+                  </div>
+                </div>
+                
             </ul>   
           </div>
         </div>
@@ -75,7 +82,7 @@
               <li class="list-group-item"><a href="https://doc.dominionmedical.co.nz/interview?i=docassemble.uti:data/questions/uti.yml&new_sesssion=1">UTI female treatment</a></li> 
               
               <li class="list-group-item" ><button class="btn btn-info collapsed" type="button" data-toggle="collapse" data-target="#collapseScore" aria-expanded="false" aria-controls="collapseScore">clinical scores</button></li>
-                <div id="collapseScore" class="collapse" aria-labelledby="headingTwo" data-parent="#clinical">
+                <div id="collapseScore" class="collapse" data-parent="#clinical">
                   <div class="card-body">
                     <li class="list-group-item"><a href="./crcl.html">Creatinine clearance calculator</a></li>
                     <li class="list-group-item"><a href="./kessler.html">Kessler 10 depression score</a></li>
